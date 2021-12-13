@@ -12,7 +12,9 @@ export default function Confirmation() {
     )
 }
 
-/**
+/** TODO
+ * colocar os outros campos no form de subs
  * Link retorna confirmação, cria sub no banco de dados
  * botão de retorno
+ * criar endpoint de retorno da confirmação, endpoint precisa receber o os dados
  */

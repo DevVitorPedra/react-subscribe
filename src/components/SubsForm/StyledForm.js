@@ -5,6 +5,7 @@ height:60% auto;
 min-height:150px;
 width:90%;
 opacity:.9;
+padding:12px 0px;
 background: rgba( 2, 2, 2, 0.25 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 8px );
@@ -35,11 +36,11 @@ export const StyledInput = styled.input`
 
 `
 export const StyledFormBtn = styled.button`
-    width:50%;
-    height:20px;
+    width:40%;
+    height:30px;
     background-color:rgba( 31, 38, 135, 1 );
     border-radius:12px;
     outline:none;
     color:white;
-    z-index:100;
+    
 `
