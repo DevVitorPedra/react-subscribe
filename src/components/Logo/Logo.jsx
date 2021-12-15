@@ -3,6 +3,6 @@ import { StyledLogo } from './StyledLogo'
 
 export default function Logo() {
     return (
-        <StyledLogo>TopBarber</StyledLogo>
+        <StyledLogo>TopDev</StyledLogo>
     )
 }

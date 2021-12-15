@@ -11,18 +11,18 @@ export default function Form() {
         initialValues: {
             name: '',
             email: '',
-            cidade: '',
-            telefone: '',
+            cidade: ''
+           
 
         },
         validationSchema: Yup.object({
             name: Yup.string().required('Nome é obrigatório'),
             email: Yup.string().email("Invalid email format").required("Email é obrigatório"),
             city: Yup.string().required('Cidade é obrigatório'),
-            phone: Yup.number()
+        
         }),
-        onSubmit: ({ name, email, city, phone }) => {
-            const subResponse = subscribe(name, email, city, phone)
+        onSubmit: ({ name, email, city }) => {
+            const subResponse = subscribe(name, email, city)
             setSuccess(subResponse)
             console.log(subResponse)
         }
@@ -38,10 +38,7 @@ export default function Form() {
             <StyledInput
                 style={{ borderBottom: `${touched.email && errors.email ? '2px solid red' : '1px solid white'}` }}
                 onBlur={handleBlur} onChange={handleChange} values={values.email} name="email" type="text" placeholder="Email" />
-            <StyledInput
-                style={{ borderBottom: `${touched.phone && errors.phone ? '2px solid red' : '1px solid white'}` }}
-                onBlur={handleBlur} onChange={handleChange} values={values.name} name="phone" type="text" placeholder="Telefone" />
-            <StyledInput
+             <StyledInput
                 style={{ borderBottom: `${touched.city && errors.city ? '2px solid red' : '1px solid white'}` }}
                 onBlur={handleBlur} onChange={handleChange} values={values.name} name="city" type="text" placeholder="Cidade" />
             <StyledFormBtn type="submit" >Inscreva-se</StyledFormBtn>
