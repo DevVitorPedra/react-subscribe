@@ -7,6 +7,7 @@ height:100vh;
 width:100vw;
 background-image:url(${BG});
 background-size:cover;
+
 display:flex;
 flex-direction:column;
 align-items:center;
